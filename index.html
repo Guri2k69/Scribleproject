@@ -3,13 +3,15 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- TODO: Include Google Fonts file here -->
 
 
 
 
 
-    
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
 
 
 </head>
@@ -17,6 +19,94 @@
 <body background="images/background.jpg">
 
 
+<!-- Sign up Model -->
+<div class="model_sup">
+    <div  class="signup_sup">
+        <span class="close_sup">&times;</span>
+        <h1>Get Started</h1>
+        <hr>
+
+        <form>
+            <p>Full Name</p>
+            <input type="text"  class="name"  placeholder="Enter Full Name" required>
+
+            <p>Username</p>
+            <input type="text" class="u_name" placeholder="Enter Username" required>
+
+            <p>Password</p>
+            <input type="password" class="pass" placeholder="Enter Password" required>
+
+            <p> Confirm Password</p>
+            <input type="password" class="c_pass" placeholder="Confirm Password" required>
+
+            <input type="submit"class="sup_button" value="Sign up" >
+        </form>
+
+    </div>
+</div>
+
+<!-- Sign in Model -->
+<div class="modal_sin">
+    <div class="form_sup">
+        <span class="close_sin">&times;</span>
+        <h1>Welcome Back!</h1>
+        <hr>
+
+        <form>
+            <p>Username</p>
+            <input type="text" class="u_name" placeholder="Enter Username" required>
+
+            <p>Password</p>
+            <input type="password" class="pass" placeholder="Enter Password" required>
+
+            <input type="submit" class="sin_button"  value="Submit">
+
+        </form>
+        <h3 class="Nan_member">Not a member?<a class="signup_in_signin"><span> Sign up </span></a></h3>
+
+    </div>
+</div>
+
+<!-- Creat post Model -->
+<div class="create_mo_sup">
+    <div class="creat_post_form">
+        <span class="creat_post_close">&times;</span>
+        <h1>Pen your post</h1>
+        <hr>
+
+        <form>
+            <p>Title:</p>
+            <input type="text" class="u_name" >
+
+            <p>Content:</p>
+            <textarea></textarea>
+            <input type="submit" class="s_button" value="Create" >
+
+        </form>
+
+
+    </div>
+</div>
+
+<!-- LOGO and header -->
+<div class="header">
+    <button class="topButtons" id="btn">Sign Up</button>
+    <button class="topButtons">Sign In</button>
+    <a  class="logo-title">ScriBBler</a>
+    <p class="middleText">Explore, Imagine, Create</p>
+</div>
+
+
+
+<!-- Center buttons -->
+<div id="post_bu_sup">
+    <a href="html/bloglist.html"><button class="post_in_buttons">All Posts</button></a>
+    <button id="create_post" class="post_in_buttons">Create Posts</button>
+</div>
+
+
+<script src="scripts/index.js"></script>
+<script src="scripts/header.js" ></script>
 </body>
 
 </html>

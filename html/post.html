@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/post.css">
+</head>
+<body>
+
+<!-- Sign up Model -->
+<div class="model_sup">
+    <div  class="signup_sup">
+        <span class="close_sup">&times;</span>
+        <h1>Get Started</h1>
+        <hr>
+
+        <form>
+            <p>Full Name</p>
+            <input type="text"  class="name"  placeholder="Enter Full Name" required>
+
+            <p>Username</p>
+            <input type="text" class="u_name" placeholder="Enter Username" required>
+
+            <p>Password</p>
+            <input type="password" class="pass" placeholder="Enter Password" required>
+
+            <p> Confirm Password</p>
+            <input type="password" class="c_pass" placeholder="Confirm Password" required>
+
+            <input type="submit"class="sup_button" value="Sign up" >
+        </form>
+
+    </div>
+</div>
+
+<!-- Sign in Model -->
+<div class="modal_sin">
+    <div class="form_sup">
+        <span class="close_sin">&times;</span>
+        <h1>Welcome Back!</h1>
+        <hr>
+
+        <form>
+            <p>Username</p>
+            <input type="text" class="u_name" placeholder="Enter Username" required>
+
+            <p>Password</p>
+            <input type="password" class="pass" placeholder="Enter Password" required>
+
+            <input type="submit" class="sin_button"  value="Submit">
+
+        </form>
+        <h3 class="Nan_member">Not a member?<a class="signup_in_signin"><span> Sign up </span></a></h3>
+
+    </div>
+</div>
+
+<!-- LOGO and header -->
+<div class="header">
+    <button class="topButtons" id="btn">Sign Up</button>
+    <button class="topButtons">Sign In</button>
+    <a  class="logo-title">ScriBBler</a>
+    <p class="middleText">Explore, Imagine, Create</p>
+</div>
+<!-- POST VIEW AREA -->
+<div class="parent_sup">
+    <h1 id="container_heading_1">OK BOOOMER</h1>
+    <!-- Hidden title for edit -->
+    <textarea type="text" id="container_heading_1_edit"></textarea>
+    <div class="container_name_edit">
+        <p id="name">GURI</p>
+        <button id="edit" onclick="edit_post()">Edit <img src="https://img.icons8.com/metro/15/ffffff/edit-property.png"/></button>
+        <!-- hidden button for save -->
+        <button id="save" onclick="save_post()">Save <img src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png"/></button>
+    </div>
+    <p id="post_body">
+
+        The use of only general relativity to predict what happened in the beginnings of the Universe has been heavily criticized, as quantum mechanics becomes a significant factor in the high-energy environment of the earliest Universe, and general relativity on its own fails to make accurate predictions.[1][3] In response to the inaccuracy of considering only general relativity, as in the traditional model of the Big Bang, alternative theoretical formulations for the beginning of the Universe have been proposed, including a string theory-based model in which two branes, enormous membranes much larger than the Universe, collided, creating mass and energy.[4]
+
+        Although there is no direct evidence for a singularity of infinite density, the cosmic microwave background is evidence that the universe expanded from a very hot, dense state.
+    </p>
+    <!-- hidden body for edit -->
+    <textarea id="pbe_sup"></textarea>
+    <button id="like" onclick="like_post()"><img src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png"/>Like</button>
+    <p id="like_counter">Be first one to like this!</p>
+    <textarea id="comment_add_content" placeholder="leave a comment..."></textarea><br>
+    <button id="comment" onclick="post_comment()">Comment</button>
+    <h3 id="comment_head">ALL Comments</h3>
+    <div id="all_comment">
+
+    </div>
+</div>
+
+
+<script src="../scripts/post.js"></script>
+<script src="../scripts/header.js"></script>
+</body>
+</html>
